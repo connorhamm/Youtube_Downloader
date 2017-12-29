@@ -1,4 +1,4 @@
 # youtube
 
 Purpose:
-Download a youtube video.
+Download youtube media.
