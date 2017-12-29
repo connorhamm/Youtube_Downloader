@@ -3,10 +3,27 @@ from __future__ import unicode_literals
 import youtube_dl
 import os
 
+# Read URL
 var = raw_input("Enter URL: ")
-print "\nDownloading to \"media\" folder"
 
-os.chdir("/home/connor/Documents/media")
+# Select different directories
+dir1 = "/home/connor/Documents/media"
+dir2 = "./"
+dir3 = "./"
+
+# Read in directory selection
+dir = raw_input("(1): " + dir1 + "\n(2): " + dir2 + "\n(3): " + dir3)
+
+# Change directory
+if dir == "1":
+	print "dir1 selected\n"
+	os.chdir(dir1)
+elif dir == "2":
+	print "dir2 selected\n"
+	os.chdir(dir2)
+elif dir == "3":
+	print "dir3 selected\n"
+	os.chdir(dir3)
 
 x = raw_input("Select Format: (1) - audio (2) - audio+video\n")
 
